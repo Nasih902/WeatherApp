@@ -28,7 +28,7 @@ class _SearchPageState extends State<SearchPage> {
   Future<void> fetchWeather({required String city}) async {
     final response = await http.get(
       Uri.parse(
-          'http://api.openweathermap.org/data/2.5/weather?q=$city&appid=baccf5f8c7764e84570f91467d276965&units=metric'),
+          'http://api.openweathermap.org/data/2.5/weather?q=$city&appid={YOUR_API_KEY}&units=metric'),
     );
 
     if (response.statusCode == 200) {
@@ -135,7 +135,8 @@ class _SearchPageState extends State<SearchPage> {
                     //Container for PlaceName
                     decoration: BoxDecoration(
                         color: feildcolor,
-                        borderRadius: const BorderRadius.all(Radius.circular(30))),
+                        borderRadius:
+                            const BorderRadius.all(Radius.circular(30))),
                     width: MediaQuery.of(context).size.width / 1.1,
                     height: MediaQuery.of(context).size.height / 10,
                     child: Center(
@@ -151,7 +152,8 @@ class _SearchPageState extends State<SearchPage> {
                   child: Container(
                     decoration: BoxDecoration(
                         color: feildcolor,
-                        borderRadius: const BorderRadius.all(Radius.circular(30))),
+                        borderRadius:
+                            const BorderRadius.all(Radius.circular(30))),
                     width: MediaQuery.of(context).size.width / 1.1,
                     height: MediaQuery.of(context).size.height / 10,
                     child: Center(
@@ -167,7 +169,8 @@ class _SearchPageState extends State<SearchPage> {
                   child: Container(
                     decoration: BoxDecoration(
                         color: feildcolor,
-                        borderRadius: const BorderRadius.all(Radius.circular(30))),
+                        borderRadius:
+                            const BorderRadius.all(Radius.circular(30))),
                     width: MediaQuery.of(context).size.width / 1.1,
                     height: MediaQuery.of(context).size.height / 10,
                     child: Center(
@@ -182,7 +185,8 @@ class _SearchPageState extends State<SearchPage> {
                   child: Container(
                       decoration: BoxDecoration(
                           color: feildcolor,
-                          borderRadius: const BorderRadius.all(Radius.circular(30))),
+                          borderRadius:
+                              const BorderRadius.all(Radius.circular(30))),
                       width: MediaQuery.of(context).size.width / 1.1,
                       height: MediaQuery.of(context).size.height / 10,
                       child: Center(
